@@ -5,11 +5,15 @@ const MP = MultivariatePolynomials
 
 include("utils.jl")
 
-import DynamicPolynomials
-Mod = DynamicPolynomials
+include("simple.jl")
+Mod = SimplePolynomials
 include("commutativetests.jl")
-include("noncommutativetests.jl")
 
-import TypedPolynomials
-Mod = TypedPolynomials
-include("commutativetests.jl")
+#import DynamicPolynomials
+#Mod = DynamicPolynomials
+#include("commutativetests.jl")
+#include("noncommutativetests.jl")
+#
+#import TypedPolynomials
+#Mod = TypedPolynomials
+#include("commutativetests.jl")
